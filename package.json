@@ -1,6 +1,6 @@
 {
   "name": "cdi-joi-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "joi-plugin/index.js",
   "index" : "joi-plugin/index.js",
@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cdi-node": "0.0.14",
     "joi": "^14.0.0"
   }
 }
