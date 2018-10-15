@@ -1,0 +1,16 @@
+{
+  "name": "cdi-joi-node",
+  "version": "0.0.1",
+  "description": "",
+  "main": "joi-plugin/index.js",
+  "index" : "joi-plugin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cdi-node": "0.0.14",
+    "joi": "^14.0.0"
+  }
+}
