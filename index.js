@@ -1,16 +1,39 @@
 const plugin = require('./joi-plugin')
 
+const Joi = require('joi')
 
-var cdiNode = require("cdi-node")
+const CDI = require('cdi-node')
 
-var cdi = new cdiNode()
+const cdi = new CDI()
 
-plugin(cdi)
+plugin(cdi, {
+    property: 'args',
+    propertySchema: 'schemaJoi'
+})
 
-const a = cdi.configure({})
+const controller = cdi.configure({})
 
-a.teste = async function ({ args })  {
-    return 'a'
+controller.schemaJoi = {
+    teste: {
+        a: Joi.string().required(),
+        n: Joi.number().required(),
+        h: Joi.number()
+    }
 }
 
-a.teste().then(console.log).catch(console.error)
+controller.teste = async function ({ args }) {
+    try {
+        return args
+    } catch (err) {
+        throw err
+    }
+}
+
+controller
+    .teste()
+    .then(a => {
+        console.log(a)
+    })
+    .catch(err => {
+        console.error(err);
+    })
