@@ -11,6 +11,11 @@ module.exports = function (cdi, options = { property: 'args', propertySchema: 's
 
             return args[options.property]
         }
-        return args[options.property]
+
+        if(args && this[options.propertySchema]){
+            return this[options.propertySchema]
+        }
+        
+        return
     })
 }
