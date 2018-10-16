@@ -14,7 +14,7 @@ describe('Request args', function () {
     this.target = this.cdiClass.configure({})
 
     this.target.schemaJoi = {
-      fnRequest: {
+      fn: {
         a: Joi.string().required(),
         n: Joi.number().required(),
         h: Joi.number()

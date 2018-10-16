@@ -14,18 +14,18 @@ describe('Response args', function () {
     this.target = this.cdiClass.configure({})
 
     this.target.schemaJoi = {
-      fnRequest: {
+      fn: {
         a: Joi.number().strict().required(),
         b: Joi.number().strict().required()
       },
-      fnResponse: {
+      _fn: {
         sum: Joi.number().strict().required()
       },
-      fn2Request: {
+      fn2: {
         a: Joi.number().strict().required(),
         b: Joi.number().strict().required()
       },
-      fn2Response: {
+      _fn2: {
         sum: Joi.number().strict().required()
       }
     }
