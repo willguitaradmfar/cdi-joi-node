@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/willguitaradmfar/cdi-joi-node.svg?branch=master)](https://travis-ci.org/willguitaradmfar/cdi-joi-node)
 
-[![Coverage Status](https://coveralls.io/repos/github/willguitaradmfar/cdi-joi-node/badge.svg?branch=master)](https://coveralls.io/github/willguitaradmfar/cdi-joi-node?branch=master)
 
 Library that assists in joi validator.
 
