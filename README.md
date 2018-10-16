@@ -29,10 +29,10 @@ plugin(cdi)
 const _module = cdi.configure({})
 
 _module.schemaJoi = {
-    fnRequest: {
-    a: Joi.string().required(),
-    n: Joi.number().required(),
-    h: Joi.number()
+    fn: {
+        a: Joi.string().required(),
+        n: Joi.number().required(),
+        h: Joi.number()
     }
 }
 
