@@ -14,7 +14,7 @@
     "joi": "^14.0.0"
   },
   "devDependencies": {
-    "cdi-node": "0.0.14",
+    "cdi-node": "*",
     "chai": "^4.2.0",
     "coveralls": "^3.0.2",
     "mocha": "^5.2.0",
